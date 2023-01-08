@@ -1,0 +1,9 @@
+{
+  "package": "online.flowerinsnow.yourgamemode.mixin",
+  "refmap": "mixins.yourgamemode.refmap.json",
+  "mixins": [],
+  "client": [
+    "MixinNetworkPlayerInfo"
+  ],
+  "server": []
+}

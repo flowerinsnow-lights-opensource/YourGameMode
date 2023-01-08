@@ -1,0 +1,16 @@
+[
+{
+  "modid": "yourgamemode",
+  "name": "Your GameMode",
+  "description": "Listen players' game mode",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/flowerinsnowdh/YourGameMode",
+  "updateUrl": "",
+  "authorList": ["flowerinsnow"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
