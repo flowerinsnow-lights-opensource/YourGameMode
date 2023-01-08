@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "yourgamemode",
+  "version": "${version}",
+  "name": "YourGameMode",
+  "description": "监听所有可见玩家的游戏模式，防权限狗必备",
+  "authors": [
+    "flowerinsnow"
+  ],
+  "contact": {
+    "repo": "https://github.com/flowerinsnowdh/YourGameMode"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/YourGameMode/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "online.flowerinsnow.yourgamemode.client.YourGameModeClient"
+    ],
+    "main": [
+      "online.flowerinsnow.yourgamemode.YourGameMode"
+    ]
+  },
+  "mixins": [
+    "YourGameMode.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
