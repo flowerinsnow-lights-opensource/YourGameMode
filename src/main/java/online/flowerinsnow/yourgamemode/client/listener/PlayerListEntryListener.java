@@ -14,7 +14,7 @@ public class PlayerListEntryListener implements PlayerListEntryGameModeChangeEve
         MinecraftClient mc = MinecraftClient.getInstance();
         if (mc.player != null) {
             String gameMode;
-            switch (entry.getGameMode()) {
+            switch (newGameMode) {
                 case CREATIVE -> gameMode = I18n.translate("gameMode.creative");
                 case SURVIVAL -> gameMode = I18n.translate("gameMode.survival");
                 case ADVENTURE -> gameMode = I18n.translate("gameMode.adventure");
