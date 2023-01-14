@@ -16,6 +16,6 @@ public class NetworkPlayerInfoListener {
 
     @SubscribeEvent
     public void onGameMode(NetworkPlayerInfoEvent.GameMode event) {
-        MessageUtils.showText("yourgamemode.add", event.profile.getName(), MessageUtils.getGameModeName(event.newGameMode));
+        MessageUtils.showText("yourgamemode.change", event.profile.getName(), MessageUtils.getGameModeName(event.newGameMode));
     }
 }
