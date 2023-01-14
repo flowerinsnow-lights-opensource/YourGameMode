@@ -65,6 +65,9 @@ dependencies {
 }
 
 jar {
+    from configurations.embed.asFileTree.files.collect {
+        it.isDirectory() ? it : zipTree(it)
+    }
     manifest {
         attributes([
             "Specification-Title": "yourgamemode",
