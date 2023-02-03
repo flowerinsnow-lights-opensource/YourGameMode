@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import online.flowerinsnow.yourgamemode.listener.EventTrigger;
 import online.flowerinsnow.yourgamemode.listener.NetworkPlayerInfoListener;
 
 @Mod(
@@ -16,10 +17,11 @@ import online.flowerinsnow.yourgamemode.listener.NetworkPlayerInfoListener;
 @SideOnly(Side.CLIENT)
 public class YourGameMode {
     public static final String MODID = "yourgamemode";
-    public static final String VERSION = "1.12.3";
+    public static final String VERSION = "1.12.4";
     
     @EventHandler
     public void init(FMLInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(new NetworkPlayerInfoListener());
+        MinecraftForge.EVENT_BUS.register(new EventTrigger());
     }
 }
