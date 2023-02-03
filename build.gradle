@@ -19,7 +19,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.12.2'
+version = '1.12.3'
 group = 'online.flowerinsnow'
 archivesBaseName = 'yourgamemode'
 
