@@ -16,7 +16,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.8.2'
+version = '1.8.3'
 group= 'online.flowerinsnow'
 archivesBaseName = 'yourgamemode'
 
@@ -75,4 +75,10 @@ jar {
 
 mixin {
     add sourceSets.main, "mixins.yourgamemode.refmap.json"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
