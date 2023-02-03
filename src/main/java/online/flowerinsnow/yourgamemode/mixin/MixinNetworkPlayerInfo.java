@@ -28,7 +28,7 @@ public class MixinNetworkPlayerInfo {
             method = "<init>(Lnet/minecraft/network/play/server/S38PacketPlayerListItem$AddPlayerData;)V",
             at = @At("RETURN")
     )
-    private static void init(S38PacketPlayerListItem.AddPlayerData p_i46295_1_, CallbackInfo ci) {
+    private void init(S38PacketPlayerListItem.AddPlayerData p_i46295_1_, CallbackInfo ci) {
         MinecraftForge.EVENT_BUS.post(new NetworkPlayerInfoEvent.Add(p_i46295_1_.getProfile(), p_i46295_1_.getGameMode()));
     }
 
