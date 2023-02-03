@@ -33,10 +33,10 @@ public class NetworkPlayerInfoListener {
     @SubscribeEvent
     public void onGameMode(NetworkPlayerInfoEvent.GameMode event) {
         WorldSettings.GameType last = lastKnown.get(event.profile.getId());
-        if (last != null && last == event.gameMode) {
+        if (last != null && last == event.newGameMode) {
             return;
         }
-        lastKnown.put(event.profile.getId(), event.gameMode);
+        lastKnown.put(event.profile.getId(), event.newGameMode);
 
         MessageUtils.showText("yourgamemode.change", event.profile.getName(), MessageUtils.getGameModeName(event.newGameMode));
     }
