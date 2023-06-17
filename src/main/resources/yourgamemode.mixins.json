@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "online.flowerinsnow.yourgamemode.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "yourgamemode.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "MixinNetworkPlayerInfo"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
